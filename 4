@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 int main() {
 
   int a, b, c;
@@ -8,9 +7,9 @@ int main() {
 
   if((a + b) > c && (c + b) > a && (a + c) > b){
     printf("Os valores informados sao de um Triangulo");
-    if(sqrt(a) == sqrt(b) + sqrt(c)|| sqrt(b) == sqrt(a) + sqrt(c) || sqrt(c) == sqrt(a) + sqrt(b)){
+    if(a * a == b * b + c * c|| b * b == a * a + c * c || c * c == a * a + b * b){
       printf(" Retangulo");
-    }else if (sqrt(a) > sqrt(b) + sqrt(c) || sqrt(b) > sqrt(a) + sqrt(c) || sqrt(c) > sqrt(a) + sqrt(b)){
+    }else if (a * a > b * b + c* c || b * b > a * a + c * c || c * c > a * a + b * b){
       printf(" Obtusangulo");
     }else{
       printf(" Acutangulo");
