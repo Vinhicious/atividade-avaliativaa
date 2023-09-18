@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+
+  double x1 = 4, y1, x2, y2, conta;
+
+  printf("CALCULE A DISTACIA DOS EIXOS X E Y DE DOIS PONTOS NO PLANO");
+  printf("\nInsira X e Y do Primeiro Ponto: ");
+  scanf("%lf %lf", &x1, &y1);
+  printf("\nInsira X e Y do Segundo Ponto: ");
+  scanf("%lf %lf", &x2, &y2);
+  
+  conta = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));
+  printf("A distacia dos dois pontos e de %.4lf", conta);
+
+}
