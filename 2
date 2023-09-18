@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+float ze = 1.10 , chico = 1.50, contador = 0;
+
+  while(chico >= ze){
+    ze += 0.3;
+    chico += 0.2;
+    contador ++;
+  }
+
+  printf("Ze sera maior que Chico em %.f, apos esses anos Ze tera %.2f e Chico %.2f", contador, ze, chico);
+  
+}
