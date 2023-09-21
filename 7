@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+
+  float n1, n2, n3, soma, mediaTurma = 0, calcMedia;
+  int contador = 0;
+  char nome[50];
+
+  while(contador < 30){
+    printf("\n\nNome do Aluno: ");
+    fgets(nome, 50, stdin);
+    fflush(stdin);
+    
+    printf("\nInsira as notas do Aluno");
+    printf("\nPrimeira Nota: ");
+    scanf("%f", &n1);
+    printf("\nSegunda Nota: ");
+    scanf("%f", &n2);
+    printf("\nTerceira Nota: ");
+    scanf("%f", &n3);
+    
+    soma = (n1 * 2 + n2 * 4 + n3 * 4) / 10;
+    contador ++;
+    mediaTurma += soma;
+    printf("%s Nota: %.1f",nome, soma);
+    if(soma > 7){
+      printf(" Aprovado");
+    }else{
+      printf(" Reprovado");
+    }
+  }
+
+  calcMedia = mediaTurma / 30;
+  printf("Media Geral da Turma: %.1f", calcMedia);
+}
