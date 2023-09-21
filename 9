@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main() {
+
+  int voto ,c1, c2, c3, c4, nulo, b, contador;
+  do{
+    printf("\nPara votar Insira os Seguintes Numeros");
+    printf("Insira 1 - Primeiro candidato\nInsira 2 - Segundo Candidato\nInsira 3 - Terceiro Candidato\nInsira 4 - Quarto Candidato\nInsira 5 - Nulo\nInsira 6 - Branco");
+    printf("\nSeu Voto: ");
+    scanf("%d", &voto);
+    switch(voto){
+      case 1:
+      c1 ++;
+      break;
+
+      case 2:
+      c2 ++;
+      break;
+
+      case 3:
+      c3 ++;
+      break;
+
+      case 4:
+      c4 ++;
+      break;
+
+      case 5:
+      nulo ++;
+      break;
+
+      case 6:
+      b ++;
+      break;
+    }
+    contador ++;
+    printf("\nVoto Confirmado");
+  }while(voto != 0);
+
+  printf("Quantidade de Votos: %d\nPrimeiro Candidato: %d\nSegundo Candidato: %d\nTerceiro Candidato: %d\nQuarto Candidato: %d\nVotos Nulos: %d\nVotos em Branco %d", contador, c1, c2, c3, c4, nulo, b);
+}
