@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+
+  float x, y;
+
+  printf("Infome as Coordenadas para descobrir a qual quadrantes elas pertencem");
+  printf("\nInsira o X: ");
+  scanf("%f", &x);
+  printf("\nInsira o Y: ");
+  scanf("%f", &y);
+
+  if(x > 0){  
+    if (y > 0){
+    printf("\nSeu ponto pertence ao Primeiro Quadrante");
+    }else if(y < 0){
+    printf("\nSeu ponto pertence ao Quarto Quadrante");
+    }else{
+    printf("\nSeu ponto esta sobre o eixo y");
+    }
+  }else if (x < 0){
+    if (y > 0){
+    printf("\nSeu ponto pertence ao segundo Quadrante");
+    }else if(y < 0){
+    printf("\nSeu ponto pertence ao terceiro Quadrante");
+    }else{
+    printf("\nSeu ponto esta sobre o eixo y");
+    }
+  }else{
+    if(y == 0){
+    printf("\nSeu ponto pertence ao Ponto de Origem");
+    }else{
+    printf("\nSeu ponto esta sobre o eixo X");
+    }
+  }
+}
